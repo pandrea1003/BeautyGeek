@@ -10,6 +10,7 @@ var axios = require("axios");
 var cheerio = require("cheerio");
 
 const users = require('./routes/user'); 
+const inventory = require('./routes/inventory');
 
 mongoose.connect(config.DB, { useNewUrlParser: true }).then(
     () => {console.log('Database is connected') },
@@ -24,6 +25,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use('/api/users', users);
+//product route
+app.use('/products', inventory);
 
 app.get('/', function(req, res) {
     res.send('hello');
@@ -36,7 +39,9 @@ const PORT = process.env.PORT || 5000;
 Inventory.find({}).then(function(res){
     console.log("THIS IS RES:" + res);
     if (res.length == 0){
-      console.log("The table was empty!")
+      console.log("The table was empty!");
+
+      //Foundation scrape
       axios.get("https://www.ulta.com/makeup-face-foundation?N=26y5").then(function(response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
@@ -67,7 +72,7 @@ Inventory.find({}).then(function(res){
           console.log(dbInventory);
         })
         .catch(function(err) {
-          console.log("YOOOO");
+          console.log("YOOOO Foundation");
           // If an error occurred, send it to the client
           return res.json(err);
         });
@@ -75,6 +80,87 @@ Inventory.find({}).then(function(res){
   
   
 });
+
+//Lipstick scrape
+axios.get("https://www.ulta.com/makeup-lips-lipstick?N=26ys").then(function(response) {
+  // Then, we load that into cheerio and save it to $ for a shorthand selector
+  var $ = cheerio.load(response.data);
+  // console.log($.fn._originalRoot.children[0].next.children[2].children[1].children[11].children[3].children[5].children[11].children[1].children[1].children[1].children[1].children[1].children[5]);
+  // Now, we grab every h2 within an article tag, and do the following:
+  $("div.productQvContainer").each(function(i, element) {
+    // Save an empty result object
+     var result = {};
+      result.category = "Lipstick";
+    // Add the text and href of every link, and save them as properties of the result object
+     
+      result.Title = $(this)
+      .children("p").children("a").text().trim();
+
+  result.picURL = $(this)
+      .children("div").children("a").children("img").attr("src");
+      console.log(result);
+
+      result.productLink = "http://ulta.com" + $(this)
+       .children("div").children("a").attr("href");
+      
+  
+  
+    // Create a new Article using the `result` object built from scraping
+    Inventory.create(result)
+      .then(function(dbInventory) {
+        // View the added result in the console
+        console.log(dbInventory);
+      })
+      .catch(function(err) {
+        console.log("YOOOO Lipstick");
+        // If an error occurred, send it to the client
+        return res.json(err);
+      });
+    });
+  
+  
+});
+
+  //Eyeshadow scrape
+axios.get("https://www.ulta.com/makeup-eyes-eyeshadow-palettes?N=26ye").then(function(response) {
+  // Then, we load that into cheerio and save it to $ for a shorthand selector
+  var $ = cheerio.load(response.data);
+  // console.log($.fn._originalRoot.children[0].next.children[2].children[1].children[11].children[3].children[5].children[11].children[1].children[1].children[1].children[1].children[1].children[5]);
+  // Now, we grab every h2 within an article tag, and do the following:
+  $("div.productQvContainer").each(function(i, element) {
+    // Save an empty result object
+     var result = {};
+      result.category = "Eyeshadow";
+    // Add the text and href of every link, and save them as properties of the result object
+     
+      result.Title = $(this)
+      .children("p").children("a").text().trim();
+
+  result.picURL = $(this)
+      .children("div").children("a").children("img").attr("src");
+      console.log(result);
+
+      result.productLink = "http://ulta.com" + $(this)
+       .children("div").children("a").attr("href");
+      
+  
+  
+    // Create a new Article using the `result` object built from scraping
+    Inventory.create(result)
+      .then(function(dbInventory) {
+        // View the added result in the console
+        console.log(dbInventory);
+      })
+      .catch(function(err) {
+        console.log("YOOOO eyeshadow");
+        // If an error occurred, send it to the client
+        return res.json(err);
+      });
+  });
+
+
+});
+
 
 
     }

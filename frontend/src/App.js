@@ -12,8 +12,12 @@ import Navbar from './components/Navbar';
 import Register from './components/Register';
 import Login from './components/Login';
 import Home from './components/Home';
+import Foundation from './components/Foundation';
+import Lipstick from './components/Lipstick';
+import Eyeshadow from './components/Eyeshadow';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import { foundationDisplay } from './actions/inventoryDisplay';
 
 if(localStorage.jwtToken) {
   setAuthToken(localStorage.jwtToken);
@@ -38,6 +42,11 @@ class App extends Component {
                 <div className="container">
                   <Route exact path="/register" component={ Register } />
                   <Route exact path="/login" component={ Login } />
+                </div>
+                <div>
+                <Route exact path="/Foundation" component={ Foundation } />
+                <Route exact path="/Eyeshadow" component={ Eyeshadow } />
+                <Route exact path="/Lipstick" component={ Lipstick } />
                 </div>
             </div>
           </Router>
