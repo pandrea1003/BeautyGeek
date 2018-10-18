@@ -45,13 +45,16 @@ class Lipstick extends Component {
                        counter1= counter1 +3;
                        counter2= counter2 +3;
                       
+                       var url1="/selectedProducts/" + first._id;
+                      var url2="/selectedProducts/" + second._id;
+                      var url3="/selectedProducts/" + third._id;
+
                                 return <div className="row"><div className="col-md-3"><img src={first.picURL} alt={first.id} height="100" width="100"/><br/>
-                                                        <a href="#" id={first.id}>{item.Title}</a><br/></div><div className="col-md-3"><img src={second.picURL} alt={second.id} height="100" width="100"/><br/>
-                                                        <a href="#" id={second.id}>{second.Title}</a><br/></div><div className="col-md-3"><img src={third.picURL} alt={third.id} height="100" width="100"/><br/>
-                                                        <a href="#" id={third.id}>{third.Title}</a><br/></div></div> }
-                        else{ console.log("lol");
-                       
-                  }
+                                                        <a href={url1} id={first._id} >{item.Title}</a><br/></div><div className="col-md-3"><img src={second.picURL} alt={second._id} height="100" width="100"/><br/>
+                                                        <a href={url2} id={second._id}>{second.Title}</a><br/></div><div className="col-md-3"><img src={third.picURL} alt={third._id} height="100" width="100"/><br/>
+                                                        <a href={url3} id={third._id}>{third.Title}</a><br/></div></div> }
+                     
+                      
                       
                   
                 }
