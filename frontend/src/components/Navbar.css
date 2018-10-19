@@ -1,0 +1,22 @@
+body {
+    background-color: lightblue;
+}
+.navbar {
+    background-image: url("BK.jpg");
+    background-size: 500px 260px;
+    /* left: 236px; */
+
+}
+
+#sign{
+    font-family: verdana;
+
+}
+
+.navbar-brand{
+  margin:0;
+  overflow: hidden;
+  font-family: 'Gudea', sans-serif;
+  background: #EA5C54 ;
+
+}
