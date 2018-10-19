@@ -11,6 +11,7 @@ var cheerio = require("cheerio");
 
 const users = require('./routes/user'); 
 const inventory = require('./routes/inventory');
+const reviews = require('./routes/reviews');
 
 mongoose.connect(config.DB, { useNewUrlParser: true }).then(
     () => {console.log('Database is connected') },
@@ -24,9 +25,12 @@ require('./passport')(passport);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//user route
 app.use('/api/users', users);
 //product route
 app.use('/products', inventory);
+//review route
+app.use('/reviews', reviews);
 
 app.get('/', function(req, res) {
     res.send('hello');
