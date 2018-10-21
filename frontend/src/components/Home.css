@@ -1,0 +1,20 @@
+.reviewBox{
+    border: 1px;
+    border-color: rgb(194, 103, 189);
+}
+
+hr{
+    color: rgb(194, 103, 189);
+}
+
+
+.miniReviewBox{
+    border: 1px solid rgb(194, 103, 189);
+    margin: 3px;
+    border-color: rgb(192, 141, 189);
+    padding: 4px;
+}
+
+.deleteButton{
+    
+}

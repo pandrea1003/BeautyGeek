@@ -1,0 +1,11 @@
+.productInfo{
+    text-align:center;
+}
+
+.reviewBox{
+    border: 1px solid rgb(194, 103, 189);
+}
+
+.jumbotron{
+    background-color: rgb(219, 214, 219) !important;
+}

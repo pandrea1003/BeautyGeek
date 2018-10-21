@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import { logoutUser } from '../actions/authentication';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
+import "./Home.css";
 
 class Home extends Component {
     state = {
@@ -61,14 +62,17 @@ handleClick(reviewID){
             const {isAuthenticated, user} = this.props.auth;
 
         const authHome = (
-            <div>
+            <div className="container">
                 Hello {user.name} ! Welcome back to Beauty Geek!
                 ID: {user.id}
 
-                <div><h2>Reviews by {this.state.currentUserName}</h2>
+                <div className="reviewBox"><h2>Reviews by {this.state.currentUserName}</h2><hr/>
                 { this.state.userReviews.map((item, index, arr) => {
-                    return <div><h3>{item.title}</h3>{item.body}<br/>
-                    <button type="button" onClick={()=> this.handleClick(item._id)}>Delete</button>
+                    var plink = "/selectedProducts"+item.pID;
+                    console.log(plink);
+                    return <div className="miniReviewBox"><h4><a href={plink}> {item.productTitle}</a></h4><h3>{item.title}</h3>{item.body}<br/>
+
+                    <button className="deleteButton" type="button" onClick={()=> this.handleClick(item._id)}>Delete</button>
                     <br/></div>
 
                 })}
