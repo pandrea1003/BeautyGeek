@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { loginUser } from '../actions/authentication';
 import classnames from 'classnames';
+import './Login.css';
 
 class Login extends Component {
 
@@ -54,7 +55,7 @@ class Login extends Component {
     render() {
         const {errors} = this.state;
         return(
-        <div className="container" style={{ marginTop: '50px', width: '700px'}}>
+        <div className="container"  id= "hold">
             <h2 style={{marginBottom: '40px'}}>Login</h2>
             <form onSubmit={ this.handleSubmit }>
                 <div className="form-group">
