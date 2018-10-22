@@ -6,10 +6,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions/authentication';
 import { withRouter } from 'react-router-dom';
-import './Home.css';
 import axios from 'axios';
-import "./Home.css";
-
+import './Home.css';
 
 class Home extends Component {
     state = {
@@ -60,15 +58,25 @@ handleClick(reviewID){
 }
 
     render() {
-        
             const {isAuthenticated, user} = this.props.auth;
 
         const authHome = (
-            <div className="container">
-                Hello {user.name} ! Welcome back to Beauty Geek!
-                ID: {user.id}
 
-                <div className="reviewBox"><h2>Reviews by {this.state.currentUserName}</h2><hr/>
+
+            <div className= "welcome">
+            <h1 class= "mainHeadline">
+
+            Hello {user.name} !
+<br></br>
+             Welcome back 
+             <br></br>
+             to Beauty Geek!
+            
+            </h1>
+            <p>
+                ID: {user.id}
+                </p>
+                <div><h2>Reviews by {this.state.currentUserName}</h2>
                 { this.state.userReviews.map((item, index, arr) => {
                     var plink = "/selectedProducts"+item.pID;
                     console.log(plink);
@@ -79,24 +87,32 @@ handleClick(reviewID){
 
                 })}
             </div>
+            
             </div>
-             
+            
+            
+            
         )
         const guestHome = (
-            <div className= "guestH">Welcome to Beauty Geek!
+            
+            <div className= "guestH">
+            <h1 class= "home">
+            Welcome to Beauty Geek!
+            </h1>
            </div>
+          
           )
         return(
-            <div>
+
+            <div class="jumbotron jumbotron-fluid">
                 {isAuthenticated ? authHome : guestHome}
             </div>
-           
-        )
             
-        
-    }
-}
+        )
 
+    }
+   
+}
     Home.propTypes = {
         auth: PropTypes.object.isRequired
     }

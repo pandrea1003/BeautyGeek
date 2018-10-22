@@ -55,10 +55,13 @@ class Login extends Component {
     render() {
         const {errors} = this.state;
         return(
-        <div className="container"  id= "hold">
-            <h2 style={{marginBottom: '40px'}}>Login</h2>
+            <body>
+        <div className="loginBox" >
+        <p class="form-title">
+                    Sign In</p>
+                    <div class="wrap">
             <form onSubmit={ this.handleSubmit }>
-                <div className="form-group">
+                <div  id="email" >
                     <input
                     type="email"
                     placeholder="Email"
@@ -71,7 +74,7 @@ class Login extends Component {
                     />
                     {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
                 </div>
-                <div className="form-group">
+                <div className="form-group" id="password" >
                     <input
                     type="password"
                     placeholder="Password"
@@ -84,14 +87,17 @@ class Login extends Component {
                     />
                     {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
                 </div>
-                <div className="form-group">
-                    <button type="submit" className="btn btn-primary">
-                        Login User
+                <div className="form-group" >
+                    <button type="submit" className="btn ">
+                        Login
                     </button>
                 </div>
             </form>
         </div>
+        </div>
+        </body>
         )
+    
     }
 }
 

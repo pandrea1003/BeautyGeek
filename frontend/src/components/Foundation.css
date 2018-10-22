@@ -1,0 +1,68 @@
+
+.FoundationBox{
+    background: pink;
+    padding: 0 30px 20px;
+    text-align: center;
+
+}
+.FoundationBox h1{
+    color: red;
+}
+
+.row{
+    background: purple;
+    padding: 20px 0 30px 20px;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+
+#one{
+    display: block;
+    float: left;
+    width: 162px;
+    height: 257px;
+    margin: 0 0 24px 16px;
+    padding: 9px 0 0 0;
+    background: burlywood;
+    text-align: center;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+#two{
+    background: brown;
+    display: block;
+    float: left;
+    width: 162px;
+    height: 257px;
+    margin: 0 0 24px 16px;
+    padding: 9px 0 0 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: 0;
+
+
+}
+#three{
+    background: green;
+    display: block;
+    float: left;
+    width: 162px;
+    height: 257px;
+    margin: 0 0 24px 16px;
+    padding: 9px 0 0 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: 0;
+    
+    
+}
+

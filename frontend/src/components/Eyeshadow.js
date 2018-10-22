@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
+import './Eyeshadow.css';
 
 
 class Eyeshadow extends Component {
@@ -31,7 +32,7 @@ class Eyeshadow extends Component {
         
         return(
             
-            <div className="container">
+            <div className="EyeshadowBox">
             <h1>Eyeshadow Palettes</h1>
                    { this.state.eyeshadow.map((item, index, arr) => {
                        

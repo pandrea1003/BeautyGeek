@@ -6,7 +6,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions/authentication';
 import { withRouter } from 'react-router-dom';
-import "./Products.css";
+import './Products.css';
+
+
 
 class Products extends Component {
     
@@ -112,18 +114,16 @@ class Products extends Component {
 
         const authProduct = (
             <div>
-            <div className="container">
-            <div className="jumbotron">
-            <div className="productInfo">
+            <div className="ProductBox">
                 <h2>{this.state.selectedProduct.Title}</h2><br/>
                 <img src={this.state.selectedProduct.picURL} alt={this.state.selectedProduct._id} height="160" width="160"/><br/>
                 <br/><a href={this.state.selectedProduct.productLink}>Buy</a><br/></div>
-            </div>
+            
             <div className="container reviewBox"><h2>Reviews</h2><hr/>
                 { this.state.productReviews.map((item, index, arr) => {
                     return <div><h3>{item.title}</h3><h4>By: {item.userName}</h4>{item.body}</div>
                 })}
-            </div></div>
+            </div>
                 <br/>
             <div className="container"><h3>Add a Review... </h3>
             <form className="form">
@@ -174,4 +174,4 @@ const mapStateToProps = (state) => ({
     auth: state.auth
 })
 
-export default connect(mapStateToProps, { logoutUser })(withRouter(Products));
+export default connect(mapStateToProps, { logoutUser, })(withRouter(Products));

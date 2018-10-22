@@ -1,11 +1,12 @@
-.productInfo{
-    text-align:center;
+
+.ProductBox{
+    background: blue;
+    
 }
 
-.reviewBox{
-    border: 1px solid rgb(194, 103, 189);
+.container h2{
+    color: red;
 }
+.form{
 
-.jumbotron{
-    background-color: rgb(219, 214, 219) !important;
 }
