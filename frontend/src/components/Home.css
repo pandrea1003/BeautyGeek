@@ -1,18 +1,51 @@
-Home {
-    background-color: lightblue;
-}
+
+
 
 .welcome{
+   position: absolute;
+   width: 85%;
+   left: 7.5%;
+   top: 26vh;
+   text-align: center;
+   z-index: 9;
+}
+
+.welcome h1{
     font-size: 35px;
-    text-align: center;
-    font-family: 'Architects Daughter', cursive;
+    line-height: 1.4;
+}
+h1{
+    display: block;
+    font-weight: 400;
+
+}
+.home{
+    position: absolute;
+width: 85%;
+left: 7.5%;
+top: 26vh;
+text-align: center;
+z-index: 9;
+font-family: Lydian;
+text-transform: uppercase;
+background-color: #ffe0e5;
+max-width: 100%;
 
 
 }
+h2{
+    font-size: 50px;
+
+}
+
+
 .guestH{
-    font-size: 35px;
-    text-align: center;
-    font-family: 'Patrick Hand', cursive;
-    
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: #ffe0e5;
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    display: table !important;
 
 }

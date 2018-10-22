@@ -1,22 +1,66 @@
-body {
-    background-color: lightblue;
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Archivo+Narrow|Hind+Siliguri|Monoton|Patrick+Hand|Rock+Salt');
+
+
+
+.navbar{
+    background: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    border-bottom: 1px solid #f4f4f4;
+    background: #fff;
+    z-index: 11;
+
+    font-size: .66667rem;
+    line-height: 1rem;
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    letter-spacing: .08334rem;
+    text-transform: uppercase;
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: auto 15px;
+    list-style-type: none;
+  
+
+   
 }
-.navbar {
-    background-image: url("BK.jpg");
-    background-size: 500px 260px;
-    /* left: 236px; */
+#logo{
+    padding: 22px 30px;
+    padding-top: 22px;
+    padding-right: 30px;
+    padding-bottom: 22px;
+    padding-left: 30px;
+    font-size: 25px;
+
+}
+
+
+
+#other{
+    
+    flex-direction: row;
+    height: 100%;
+    margin: 0 190px 0 150px;
+    
+
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
 
 }
 
 #sign{
-    font-family: verdana;
-
-}
-
-.navbar-brand{
-  margin:0;
-  overflow: hidden;
-  font-family: 'Gudea', sans-serif;
-  background: #EA5C54 ;
-
+   
+    top: 50%;
+    right: 30px;
+    left: auto;
+    
 }
