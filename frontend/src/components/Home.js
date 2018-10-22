@@ -6,8 +6,10 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions/authentication';
 import { withRouter } from 'react-router-dom';
+import './Home.css';
 import axios from 'axios';
 import "./Home.css";
+
 
 class Home extends Component {
     state = {
@@ -81,9 +83,8 @@ handleClick(reviewID){
              
         )
         const guestHome = (
-            <div>
-            Welcome to Beauty Geek!
-            </div>
+            <div className= "guestH">Welcome to Beauty Geek!
+           </div>
           )
         return(
             <div>
