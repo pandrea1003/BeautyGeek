@@ -16,7 +16,11 @@ var ReviewSchema = new Schema({
   userId:  {type: String,
     required: true},
     userName:  {type: String,
-      required: true}
+      required: true},
+      productTitle:{type: String,
+        required: true},
+      pID:{type: String,
+        required: true}
 
 });
 
