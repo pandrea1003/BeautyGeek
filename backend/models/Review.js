@@ -12,12 +12,15 @@ var ReviewSchema = new Schema({
   // `body` is of type String
   body: {type: String,
     required: true},
-
-    Product: {
-        type: Schema.Types.ObjectId,
-        ref: "Product"
-      }
-    
+    //userID
+  userId:  {type: String,
+    required: true},
+    userName:  {type: String,
+      required: true},
+      productTitle:{type: String,
+        required: true},
+      pID:{type: String,
+        required: true}
 
 });
 

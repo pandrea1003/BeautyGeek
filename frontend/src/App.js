@@ -15,6 +15,7 @@ import Home from './components/Home';
 import Foundation from './components/Foundation';
 import Lipstick from './components/Lipstick';
 import Eyeshadow from './components/Eyeshadow';
+import Products from './components/Products';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { foundationDisplay } from './actions/inventoryDisplay';
@@ -47,6 +48,7 @@ class App extends Component {
                 <Route exact path="/Foundation" component={ Foundation } />
                 <Route exact path="/Eyeshadow" component={ Eyeshadow } />
                 <Route exact path="/Lipstick" component={ Lipstick } />
+                <Route path="/selectedProducts/:id" component={ Products } />
                 </div>
             </div>
           </Router>

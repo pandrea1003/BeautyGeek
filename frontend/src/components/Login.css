@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter|Hind+Siliguri|Monoton|Patrick+Hand|Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Archivo+Narrow|Hind+Siliguri|Monoton|Patrick+Hand|Rock+Salt);
+
+@import url(https://fonts.googleapis.com/css?family=Numans);
+body{
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+
+}
+.loginBox {
+  padding: 100px 15px 33px 15px;
+    background: #ffe0e5;
+    width: 960px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+ p.form-title
+{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+
+
+/* login box */
+/* .container{
+background: transparent;
+width: 50px;
+margin: 0 auto;
+} */
+/* email and passwork box */
+/* .contaner #emailP{
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+} */
+
+.wrap{
+    background: transparent;
+    width: 100%;
+    padding: 77px 15px 33px 15px;
+    overflow: hidden;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+
+    
+
+}
+ 
+
+input.form-control{
+    outline: none;
+    border: 1px solid #eee9e8;
+    border-radius: 0%;
+    width: 100%;
+    padding: 25px;
+    background: transparent;
+    font-size: 20px;
+    height: 45px;
+    line-height: 1.2;
+    display: block;
+    position: relative;
+    top: 50;
+    overflow: visible;
+    font-family: Soleil,Helvetica,Arial,sans-serif;
+    margin: 0 0 22px;
+    
+}
+        
+button{
+    font-size: 15px;
+    background: rgb(56, 56, 158);
+    line-height: 1.5;
+    width: 20%;
+    display: flex;
+
+}
+
+
+
+ 
