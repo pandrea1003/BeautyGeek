@@ -78,8 +78,11 @@ handleClick(reviewID){
                 </p>
                 <div><h2>Reviews by {this.state.currentUserName}</h2>
                 { this.state.userReviews.map((item, index, arr) => {
-                    return <div><h3>{item.title}</h3>{item.body}<br/>
-                    <button type="button" onClick={()=> this.handleClick(item._id)}>Delete</button>
+                    var plink = "/selectedProducts"+item.pID;
+                    console.log(plink);
+                    return <div className="miniReviewBox"><h4><a href={plink}> {item.productTitle}</a></h4><h3>{item.title}</h3>{item.body}<br/>
+
+                    <button className="deleteButton" type="button" onClick={()=> this.handleClick(item._id)}>Delete</button>
                     <br/></div>
 
                 })}

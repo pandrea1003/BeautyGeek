@@ -9,7 +9,7 @@ const models = require('../models');
 // Route for saving/updating an Article's associated Note
 router.post("/:productID/:userID", function(req, res) {
     // Create a new note and pass the req.body to the entry
-    var newReview = {title:req.body.title, body: req.body.body, userId:req.body.userId, userName: req.body.userName}
+    var newReview = {title:req.body.title, body: req.body.body, userId:req.body.userId, userName: req.body.userName, productTitle: req.body.productTitle, pID: req.body.pID}
     console.log(newReview);
     models.Review.create(newReview)
       .then(function(dbReview) {
