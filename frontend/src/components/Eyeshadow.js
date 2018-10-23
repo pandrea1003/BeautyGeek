@@ -33,8 +33,8 @@ class Eyeshadow extends Component {
         return(
            
             <div className="EyeshadowBox">
-            <div className="containerEye">
-            <h1>Eyeshadow Palettes</h1>
+            <div className="container eyeShadowContainer">
+            <h1 className="eyeshadowTitle">Eyeshadow Palettes</h1>
                    { this.state.eyeshadow.map((item, index, arr) => {
                        
                        console.log(counter+ " " + counter1+ " " + counter2);
