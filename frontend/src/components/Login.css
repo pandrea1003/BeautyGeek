@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Archivo+Narrow|Hind+Siliguri|Monoton|Patrick+Hand|Rock+Salt);
 
 @import url(https://fonts.googleapis.com/css?family=Numans);
-body{
+.loginBody{
     background-size: cover;
     padding: 0;
     margin: 0;
