@@ -27,6 +27,7 @@
     border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
     line-height: 1.5;
     width: 100%;
+    display: flex;
     color:white;
     position: relative;
         text-align: center;
