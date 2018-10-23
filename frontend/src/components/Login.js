@@ -56,9 +56,15 @@ class Login extends Component {
         const {errors} = this.state;
         return(
             <div className="loginBody">
+<<<<<<< HEAD
         <div className="loginBox container" style={{ marginTop: '50px', width: '700px'}}>
         <h2 >Sign in</h2><br></br>
                     
+=======
+
+        <div className="loginBox container" style={{ marginTop: '50px', width: '700px'}}>
+        <h2 >Sign in</h2><br></br>
+>>>>>>> 460d059ad27a82abb5bb0e12c928880c845c9ec7
             <form onSubmit={ this.handleSubmit }>
             <div className="form-group">
                 <div  id="email" >
