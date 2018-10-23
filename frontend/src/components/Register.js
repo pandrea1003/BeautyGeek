@@ -61,12 +61,12 @@ class Register extends Component {
         return(
             <div className="registerBody">
 
+
         <div className="container RegisterBox" style={{ marginTop: '50px', width: '700px'}}>
             <h2 style={{marginBottom: '40px'}} className="registrationTitle">Registration</h2><br/>
-
             <form onSubmit={ this.handleSubmit }>
                 <div className="form-group">
-                    <input
+                    <input 
                     type="text"
                     placeholder="Name"
                     className={classnames('form-control form-control-lg', {

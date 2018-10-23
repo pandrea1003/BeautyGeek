@@ -1,41 +1,77 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
+
 .productBox{
     background: rgb(235, 232, 233) !important;
     text-align: center;
     border: 1px inset;
     border-color: rgb(71, 3, 43);
     background-image: url('./BK3.jpg') !important;
+
 }
 
 .productTitle{
     font-family: 'Abril Fatface', cursive;
+    text-align: center;
+
+    
 }
 
 
 .buyLink{
-    font-size: 15px;
+    font-size: 25px;
     color: rgb(148, 1, 89);
+    text-align: center;
+    
 }
 .reviewBox{
     border-radius: 5px;
     background-image: url('./BK3.jpg') !important;
+    width: 80%;
+    border: 1px solid;
+    border-color: rgb(80, 31, 39);
+}
+
+.individualReview{
+    border-top: 3px solid #c7b073;
+    border-bottom: 3px solid #c7b073;
+    padding: 3px;
+    margin: 3px;
+
 }
 
 .addReview{
-    border-radius: 5px;
+    border-radius: 10px;
     background-image: url('./BK3.jpg') !important;
     border: 1px solid;
     border-color: rgb(80, 31, 39);
-    text-align: left;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 80%;   
+    text-align: center;
+
+
+    
 }
 
 .titleInput{
     height: 40px;
     width: 700px;
+    letter-spacing: 1px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-top: 3px solid #c7b073;
+    border-bottom: 3px solid #c7b073;
 }
 
 .bodyInput{
+    margin-top: 25px;
     height: 310px;
     width: 700px;
+    letter-spacing: 1px;
+    border-left: 2px solid #c7b073;
+    border-right: 2px solid #c7b073;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+
 }

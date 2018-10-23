@@ -119,9 +119,9 @@ class Products extends Component {
                 <img src={this.state.selectedProduct.picURL} alt={this.state.selectedProduct._id} height="160" width="160"/><br/>
                 <br/><a href={this.state.selectedProduct.productLink} className="buyLink">Buy</a><br/></div>
             </div>
-            <div className="container reviewBox"><h2>Reviews</h2><hr/>
+            <div className="container reviewBox"><h2><b>Reviews</b></h2><hr/>
                 { this.state.productReviews.map((item, index, arr) => {
-                    return <div><h3>{item.title}</h3><h4>By: {item.userName}</h4>{item.body}</div>
+                    return <div className="individualReview"><h3><b>{item.title}</b></h3><h4>By: {item.userName}</h4>{item.body}</div>
                 })}
             </div></div>
                 <br/>
@@ -157,12 +157,18 @@ class Products extends Component {
             
             <div>
                 {isAuthenticated ? authProduct : guestProduct}
+                <footer>
+            <div class="card-footer">
+    <p>BeautyGeek</p>
+  </div>
+            </footer>
             </div>
-           
+          
         )
             
         
     }
+   
 }
 
 
