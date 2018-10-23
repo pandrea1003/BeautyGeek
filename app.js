@@ -8,7 +8,7 @@ const config = require('./db');
 const Inventory = require("./models/Inventory");
 var axios = require("axios");
 var cheerio = require("cheerio");
-
+const path = require("path");
 const users = require('./routes/user'); 
 const inventory = require('./routes/inventory');
 const reviews = require('./routes/reviews');
