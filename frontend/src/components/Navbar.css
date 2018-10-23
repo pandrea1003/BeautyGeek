@@ -1,9 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Archivo+Narrow|Hind+Siliguri|Monoton|Patrick+Hand|Rock+Salt');
-
-
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 .navbar{
-    background: red;
+    background-image: url('./BK3.jpg') !important;
+    background: pink;
+}
+.nav-link{
+    color: black;
+    font-size:25px;
+}
+.navbar-brand{
+    font-size:30px !important;
+    color: black;
+    font-family: 'Abril Fatface', cursive !important;
+}
+
+/* .navbar{
+    background: red !important;
     position: fixed;
     top: 0;
     right: 0;
@@ -27,7 +39,7 @@
   
 
    
-}
+} */
 #logo{
     padding: 22px 30px;
     padding-top: 22px;

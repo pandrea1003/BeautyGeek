@@ -12,7 +12,6 @@ body{
 }
 .loginBox {
   padding: 100px 15px 33px 15px;
-    background: #ffe0e5;
     width: 960px;
     border-radius: 10px;
     display: flex;
@@ -87,12 +86,13 @@ input.form-control{
     
 }
         
-button{
+.buttonLogin{
     font-size: 15px;
-    background: rgb(56, 56, 158);
+    background: rgb(83, 3, 43);
     line-height: 1.5;
     width: 20%;
     display: flex;
+    color:white;
 
 }
 
