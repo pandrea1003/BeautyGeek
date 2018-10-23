@@ -45,10 +45,10 @@ class App extends Component {
                   <Route exact path="/login" component={ Login } />
                 </div>
                 <div>
-                <Route exact path="/Foundation" component={ Foundation } />
-                <Route exact path="/Eyeshadow" component={ Eyeshadow } />
-                <Route exact path="/Lipstick" component={ Lipstick } />
-                <Route path="/selectedProducts/:id" component={ Products } />
+                  <Route exact path="/Foundation" component={ Foundation } />
+                  <Route exact path="/Eyeshadow" component={ Eyeshadow } />
+                  <Route exact path="/Lipstick" component={ Lipstick } />
+                  <Route path="/selectedProducts/:id" component={ Products } />
                 </div>
             </div>
           </Router>
