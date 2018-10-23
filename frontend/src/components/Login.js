@@ -56,7 +56,11 @@ class Login extends Component {
         const {errors} = this.state;
         return(
             <div className="loginBody">
+<<<<<<< HEAD
         <div className="loginBox">
+=======
+        <div className="loginBox" >
+>>>>>>> 9e99c8bfd89994e4427857cc9588af4538346786
         <p class="form-title">
                     Sign In</p>
                     <div class="wrap">
@@ -95,8 +99,12 @@ class Login extends Component {
             </form>
         </div>
         </div>
+<<<<<<< HEAD
         </div>
         )
+=======
+        </div>        )
+>>>>>>> 9e99c8bfd89994e4427857cc9588af4538346786
     
     }
 }

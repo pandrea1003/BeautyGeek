@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import { registerUser } from '../actions/authentication';
 import classnames from 'classnames';
-
+import "./Register.css";
 class Register extends Component {
 
     constructor() {
@@ -60,8 +60,14 @@ class Register extends Component {
         const { errors } = this.state;
         return(
             <div className="registerBody">
+<<<<<<< HEAD
         <div className="container" style={{ marginTop: '50px', width: '700px'}}>
             <h2 style={{marginBottom: '40px'}}>Registration</h2>
+=======
+
+        <div className="RegisterBox" style={{ marginTop: '50px', width: '700px'}}>
+            <h2 style={{marginBottom: '40px'}}>Registration</h2><br/>
+>>>>>>> 9e99c8bfd89994e4427857cc9588af4538346786
             <form onSubmit={ this.handleSubmit }>
                 <div className="form-group">
                     <input
@@ -116,10 +122,11 @@ class Register extends Component {
                     {errors.password_confirm && (<div className="invalid-feedback">{errors.password_confirm}</div>)}
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn buttonRegister">
                         Register User
                     </button>
                 </div>
+            
             </form>
         </div>
         </div>
