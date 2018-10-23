@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Archivo+Narrow|Hind+Siliguri|Monoton|Patrick+Hand|Rock+Salt);
 
 @import url(https://fonts.googleapis.com/css?family=Numans);
-.loginBody{
+.registerBody{
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -10,7 +10,7 @@
     max-width: 100%;
 
 }
-.loginBox {
+.RegisterBox {
   padding: 100px 15px 33px 15px;
     width: 960px;
     border-radius: 10px;
@@ -21,7 +21,7 @@
 
 }
 
- p.form-title
+ h2
 {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 24px;
@@ -40,18 +40,6 @@
 
 
 
-/* login box */
-/* .container{
-background: transparent;
-width: 50px;
-margin: 0 auto;
-} */
-/* email and passwork box */
-/* .contaner #emailP{
-    background-size: cover;
-    padding: 0;
-    margin: 0;
-} */
 
 .wrap{
     background: transparent;
@@ -86,7 +74,7 @@ input.form-control{
     
 }
         
-.buttonLogin{
+.buttonRegister{
     font-size: 15px;
     background: rgb(83, 3, 43);
     line-height: 1.5;
@@ -95,7 +83,3 @@ input.form-control{
     color:white;
 
 }
-
-
-
- 

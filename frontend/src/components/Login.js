@@ -55,7 +55,7 @@ class Login extends Component {
     render() {
         const {errors} = this.state;
         return(
-            <body>
+            <div className="loginBody">
         <div className="loginBox" >
         <p class="form-title">
                     Sign In</p>
@@ -95,8 +95,7 @@ class Login extends Component {
             </form>
         </div>
         </div>
-        </body>
-        )
+        </div>        )
     
     }
 }
