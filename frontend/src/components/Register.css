@@ -18,9 +18,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
+    width: 100%;
+    padding: 77px 15px 33px 15px;
+    overflow: hidden;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
 }
+
 
  .registrationTitle
 {
@@ -42,33 +47,12 @@
 
 
 
-.wrap{
-    background: transparent;
-    width: 100%;
-    padding: 77px 15px 33px 15px;
-    overflow: hidden;
-    display: block;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
 
-    
-
-}
  
 
 input.form-control{
-    outline: none;
-    border: 1px solid #eee9e8;
-    border-radius: 0%;
     width: 100%;
-    padding: 25px;
     background: transparent;
-    font-size: 20px;
-    height: 45px;
-    line-height: 1.2;
-    display: block;
-    position: relative;
-    top: 50;
     overflow: visible;
     font-family: Soleil,Helvetica,Arial,sans-serif;
     margin: 0 0 22px;
@@ -76,10 +60,14 @@ input.form-control{
 }
         
 .buttonRegister{
-    font-size: 15px;
+    font-size: 25px;
     background: rgb(83, 3, 43);
     line-height: 1.5;
+    width: 100%;
     display: flex;
     color:white;
+    position: relative;
 
+
+   
 }
