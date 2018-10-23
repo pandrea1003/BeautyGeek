@@ -29,12 +29,13 @@ background-color: rgb(102, 71, 102);
 
 
 }
+
 .reviewBox{
     font-size: 18px;
     border:2px solid;
     border-color:rgb(102, 71, 102);
 
-}
+
 
 .reviewBoxHeader{
     font-family: 'PT Serif', serif;
