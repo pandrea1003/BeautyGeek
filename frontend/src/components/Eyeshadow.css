@@ -2,7 +2,7 @@
     background-color: #ffe0e5;
 }
 
-.containerEye{
+.eyeShadowContainer{
     background: white;
     width: 80%;
     text-align: center;
@@ -10,7 +10,9 @@
 
 
 }
-.EyeshadowBox h1{
+.eyeshadowTitle{
+    background-image: url('./BK3.jpg') !important;
+    background: pink;
    border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     border-top: 3px solid #c7b073;
@@ -25,6 +27,7 @@
 
 
 #one{
+    border-radius: 5px;
     background-image: url('./BK3.jpg') !important;
     background: pink;
     border-left: 3px solid #c7b073;
@@ -37,6 +40,9 @@
     font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;    text-transform: uppercase;
 }
 #two{
+    border-radius: 5px;
+    background-image: url('./BK3.jpg') !important;
+    background: pink;
     border-left: 3px solid #c7b073;
     border-right: 3px solid #c7b073;
     border-top: 3px solid #c7b073;
@@ -49,6 +55,9 @@
 
 }
 #three{
+    border-radius: 5px;
+    background-image: url('./BK3.jpg') !important;
+    background: pink;
     border-left: 3px solid #c7b073;
     border-right: 3px solid #c7b073;
     border-top: 3px solid #c7b073;
