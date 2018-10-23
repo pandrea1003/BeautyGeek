@@ -63,6 +63,11 @@ class Eyeshadow extends Component {
                 
                 )}
             </div>
+            <footer>
+            <div class="card-footer">
+    <p>BeautyGeek</p>
+  </div>
+            </footer>
             </div>
            
         )

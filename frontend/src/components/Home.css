@@ -32,16 +32,26 @@ background-color: rgb(102, 71, 102);
 
 .reviewBox{
     font-size: 18px;
-    border:2px solid;
-    border-color:rgb(102, 71, 102);
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 3px solid #c7b073;
+    font-family: brandon-grotesque!important;
+
 
 }
 
 .reviewBoxHeader{
-    font-family: 'PT Serif', serif;
     font-size: 25px;
     font-weight: bold;
     padding: 5px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-top: 3px solid #c7b073;
+    border-bottom: 3px solid #c7b073;
+    font-family: brandon-grotesque!important;
+    background: #d6c0c3 !important;
+
+
 }
 
 .guestH{
@@ -61,11 +71,13 @@ background-color: rgb(102, 71, 102);
     position:relative;
     width: 90%;
     opacity: 70%;
+
 }
 
 .thumbnail {
     text-align:center;
     position: relative;
+
     
 }
 
@@ -78,6 +90,7 @@ background-color: rgb(102, 71, 102);
     opacity: 50%;
     width: 100%;
     left: 0;
+
 }
 
 
@@ -94,7 +107,9 @@ background-color: rgb(102, 71, 102);
 }
 
 .userName{
-    color:rgb(78, 4, 60);
+    color: rgb(182, 83, 100);
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;    
+
 }
 
 .beautyGeekFont{
@@ -102,17 +117,19 @@ background-color: rgb(102, 71, 102);
 }
 
 .miniReviewBox{
+    margin-top: 5px;
     font-size: 20px;
-    border:1px solid;
-    border-color:rgb(102, 71, 102);
     padding:5px; 
     margin: 5px;
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;    
+    text-align: center;
+
 }
 
 .homeProductTitle{
     font-size: 26px;
     border-radius: 5px; 
-    font-family: 'Niramit', sans-serif;
+    font-family: brandon-grotesque!important;
     font-weight: bold; 
 }
 .homeProductBody{

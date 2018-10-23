@@ -62,10 +62,10 @@ class Register extends Component {
             <div className="registerBody">
 
         <div className="RegisterBox container" style={{ marginTop: '50px', width: '700px'}}>
-            <h2 style={{marginBottom: '40px'}}>Registration</h2><br/>
+            <h2 >Registration</h2><br/>
             <form onSubmit={ this.handleSubmit }>
                 <div className="form-group">
-                    <input
+                    <input 
                     type="text"
                     placeholder="Name"
                     className={classnames('form-control form-control-lg', {
