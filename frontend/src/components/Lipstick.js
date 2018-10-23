@@ -57,12 +57,16 @@ class Lipstick extends Component {
                                                         <a href={url3} id={third._id}>{third.Title}</a><br/></div></div> }
                      
                       
-                      
                   
                 }
                 
                 )}
             </div>
+            <footer>
+            <div class="card-footer">
+    <p>BeautyGeek</p>
+    </div>
+            </footer>
             </div>
            
         )

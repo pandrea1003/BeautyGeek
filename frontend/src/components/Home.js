@@ -66,7 +66,7 @@ handleClick(reviewID){
 
             <div className= "container">
             <div className = "welcome">
-            <h1 class= "mainHeadline">
+            <h1 class="mainHeadline">
 
             Hello <b className="userName">{user.name} </b>!
 <br></br>
@@ -79,13 +79,13 @@ handleClick(reviewID){
                 ID: {user.id}
                 </p>
                 </div>
-                <div className="reviewBox"><h2 className="reviewBoxHeader">Reviews made by <b>{this.state.currentUserName}</b> (you)</h2><hr/>
+                <div className="container reviewBox"><h2 className="reviewBoxHeader">Reviews made by <b>{this.state.currentUserName}</b> (you)</h2>
                 { this.state.userReviews.map((item, index, arr) => {
                     var plink = "/selectedProducts"+item.pID;
                     console.log(plink);
                     return <div className="miniReviewBox"><h4><u><a href={plink} className="linkProdHome"> {item.productTitle}</a></u></h4><h3 className="homeProductTitle">{item.title}</h3><p className="homeProductBody">{item.body}</p><br/>
 
-                    <button className="btn btn-danger deleteButton" type="button" onClick={()=> this.handleClick(item._id)}>Delete</button>
+                    <button className="btn btn-danger" type="button" onClick={()=> this.handleClick(item._id)}>Delete</button>
                     <br/></div>
 
                 })}
@@ -102,17 +102,16 @@ handleClick(reviewID){
               <div class="thumbnail text-center">
             <img src={logo} alt="beautygeekwelcome" className="img-responsive welcomeImg"/>
             <div class="caption"><p>Welcome to <p className="beautyGeekFont">Beauty Geek!</p></p>
-            
           
            </div>
            </div>
            </div>
-          
           )
         return(
 
                 <div>
                 {isAuthenticated ? authHome : guestHome}
+                
                 </div>
             
         )

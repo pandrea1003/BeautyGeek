@@ -24,6 +24,8 @@ background-color: #ffe0e5;
 } */
 
 .foundationTitle{
+    background-image: url('./BK3.jpg') !important;
+    background: pink;
     border-left: 2px solid #fff;
     border-right: 2px solid #fff;
     border-top: 3px solid #c7b073;
