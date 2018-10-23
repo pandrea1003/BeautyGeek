@@ -102,17 +102,16 @@ handleClick(reviewID){
               <div class="thumbnail text-center">
             <img src={logo} alt="beautygeekwelcome" className="img-responsive welcomeImg"/>
             <div class="caption"><p>Welcome to <p className="beautyGeekFont">Beauty Geek!</p></p>
-            
           
            </div>
            </div>
            </div>
-          
           )
         return(
 
                 <div>
                 {isAuthenticated ? authHome : guestHome}
+                
                 </div>
             
         )

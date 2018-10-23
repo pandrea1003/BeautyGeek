@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node app.js",
+    "start:dev": "concurrently \"nodemon --ignore 'frontend/*'\" \"npm run client\"",
+    "client": "cd frontend && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd frontend && yarn install",
+    "build": "cd frontend && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "gravatar": "^1.6.0",
+    "if-env": "^1.0.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "concurrently": "^4.0.1"
+  },
+  "description": ""
+}
