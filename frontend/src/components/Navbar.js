@@ -43,7 +43,7 @@ class Navbar extends Component {
 
        
         return (
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar sticky-top navbar-expand-lg">
   <div class="collapse navbar-collapse" >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">

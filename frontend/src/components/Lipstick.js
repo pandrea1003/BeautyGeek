@@ -33,7 +33,8 @@ class Lipstick extends Component {
         return(
             
             <div className="LipstickBox">
-            <h1>Lipsticks</h1>
+            <div className= "containerLip">
+            <h1 className="lipstickTitle">Lipsticks</h1>
                    { this.state.lipstick.map((item, index, arr) => {
                        
                        console.log(counter+ " " + counter1+ " " + counter2);
@@ -50,9 +51,9 @@ class Lipstick extends Component {
                       var url2="/selectedProducts/" + second._id;
                       var url3="/selectedProducts/" + third._id;
 
-                                return <div className="row"><div className="col-md-3" id="uno"><img src={first.picURL} alt={first.id} height="100" width="100"/><br/>
-                                                        <a href={url1} id={first._id} >{item.Title}</a><br/></div><div className="col-md-3"><img src={second.picURL} alt={second._id} height="100" width="100"/><br/>
-                                                        <a href={url2} id={second._id}>{second.Title}</a><br/></div><div className="col-md-3"><img src={third.picURL} alt={third._id} height="100" width="100"/><br/>
+                                return <div className="row"><div className="col-md-3" id="one"><img src={first.picURL} alt={first.id} /><br/>
+                                                        <a href={url1} id={first._id} >{item.Title}</a><br/></div><div className="col-md-3" id="two"><img src={second.picURL} alt={second._id} /><br/>
+                                                        <a href={url2} id={second._id}>{second.Title}</a><br/></div><div className="col-md-3" id="three"><img src={third.picURL} alt={third._id} /><br/>
                                                         <a href={url3} id={third._id}>{third.Title}</a><br/></div></div> }
                      
                       
@@ -61,6 +62,7 @@ class Lipstick extends Component {
                 }
                 
                 )}
+            </div>
             </div>
            
         )

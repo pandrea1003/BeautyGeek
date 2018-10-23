@@ -1,40 +1,35 @@
-
 .FoundationBox{
-    background: pink;
-    padding: 0 30px 20px;
+background-color: #ffe0e5;
+
+}
+.containerFoun{
+    background: white;
+    width: 80%;
     text-align: center;
+    margin: 0 auto;
 
 }
-.FoundationBox h1{
-    color: red;
-}
 
-.row{
-    background: purple;
-    padding: 20px 0 30px 20px;
-    text-align: center;
-    position: relative;
-    
+.foundationTitle{
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-top: 3px solid #c7b073;
+    border-bottom: 3px solid #c7b073;
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;    text-transform: uppercase;
 
 }
 
 
-#one{
-    display: block;
-    float: left;
-    width: 162px;
-    height: 257px;
-    margin: 0 0 24px 16px;
-    padding: 9px 0 0 0;
-    background: burlywood;
-    text-align: center;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 20px;
-    letter-spacing: 0;
-}
+
+
+
+
+
 #two{
-    background: brown;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #c7b073;
+    border-bottom: 3px solid #c7b073;
     display: block;
     float: left;
     width: 162px;
@@ -50,7 +45,10 @@
 
 }
 #three{
-    background: green;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #c7b073;
+    border-bottom: 3px solid #c7b073;
     display: block;
     float: left;
     width: 162px;

@@ -1,18 +1,38 @@
-.LipstickBox{
-    background: blue;
+.LipstickBox
+{
+    background-color: #ffe0e5;
+
+}
+.containerLip{
+    background: white;
+    padding-left: 0;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-top: 1px solid #c7b073;
+    border-bottom: 2px solid #c7b073;
+    height: 100%;
+    transform: translateZ(0px);
+}
+.lipstickTitle{
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-top: 3px solid #c7b073;
+    border-bottom: 3px solid #c7b073;
 }
 
-#uno{
-    background: green;
+.LipstickBox h1{
     display: block;
-    float: left;
-    width: 162px;
-    height: 257px;
-    margin: 0 0 24px 16px;
-    padding: 9px 0 0 0;
-    text-align: center;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 20px;
-    letter-spacing: 0;
+    margin: 0;
+    padding: 0 30px;
+    width: 100%;
+    float: none;
+
+    color: #000;
+    font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;    text-transform: uppercase;
+    font-weight: 500;
+    box-sizing: border-box;
 }

@@ -40,7 +40,8 @@ class Foundation extends Component {
         return(
             
             <div className="FoundationBox">
-            <h1>Foundations</h1>
+            <div className= "containerFoun">
+            <h1 className="foundationTitle">Foundations</h1>
                    { this.state.foundations.map((item, index, arr) => {
                        
                        console.log(counter+ " " + counter1+ " " + counter2);
@@ -57,9 +58,9 @@ class Foundation extends Component {
                       var url2="/selectedProducts/" + second._id;
                       var url3="/selectedProducts/" + third._id;
 
-                                return <div className="row"><div className="col-md-3" id="one"><img src={first.picURL} alt={first.id} /><br/>
-                                <a href={url1} id={first._id} >{item.Title}</a><br/></div><div className="col-md-3" id="two"><img src={second.picURL} alt={second._id}/><br/>
-                                <a href={url2} id={second._id}>{second.Title}</a><br/></div><div className="col-md-3" id="three"><img src={third.picURL} alt={third._id}/><br/>
+                                return <div className="row" ><div className="col-md-3" id="one"><img src={first.picURL} alt={first.id} /><br/>
+                                <a href={url1} id={first._id} >{item.Title}</a><br/></div><div className="col-md-3" id="two"><img src={second.picURL} alt={second._id} /><br/>
+                                <a href={url2} id={second._id}>{second.Title}</a><br/></div><div className="col-md-3" id="three"><img src={third.picURL} alt={third._id} /><br/>
                                 <a href={url3} id={third._id}>{third.Title}</a><br/></div></div> }
                      
                       
@@ -68,7 +69,7 @@ class Foundation extends Component {
                 
                 )}
             </div>
-           
+            </div>
         )
             
         
