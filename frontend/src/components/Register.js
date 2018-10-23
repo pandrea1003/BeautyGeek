@@ -65,7 +65,7 @@ class Register extends Component {
             <h2 style={{marginBottom: '40px'}}>Registration</h2>
 =======
 
-        <div className="RegisterBox" style={{ marginTop: '50px', width: '700px'}}>
+        <div className="RegisterBox container" style={{ marginTop: '50px', width: '700px'}}>
             <h2 style={{marginBottom: '40px'}}>Registration</h2><br/>
 >>>>>>> 9e99c8bfd89994e4427857cc9588af4538346786
             <form onSubmit={ this.handleSubmit }>
