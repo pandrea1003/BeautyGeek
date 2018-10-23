@@ -2,13 +2,23 @@
 background-color: #ffe0e5;
 
 }
+
 .containerFoun{
     background: white;
     width: 80%;
+
+.FoundationBox h1{
+    color: red;
+}
+
+/* .row{
+    background: purple;
+    padding: 20px 0 30px 20px;
+
     text-align: center;
     margin: 0 auto;
 
-}
+} */
 
 .foundationTitle{
     border-left: 2px solid #fff;
