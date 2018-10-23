@@ -9,7 +9,7 @@
    text-align:center;
 }
 
-.welcome h1{
+.mainHeadline{
     font-size: 35px;
     line-height: 1.4;
 }
@@ -44,12 +44,8 @@ background-color: rgb(102, 71, 102);
     font-size: 25px;
     font-weight: bold;
     padding: 5px;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-top: 3px solid #c7b073;
     border-bottom: 3px solid #c7b073;
     font-family: brandon-grotesque!important;
-    background: #d6c0c3 !important;
 
 
 }
@@ -84,7 +80,7 @@ background-color: rgb(102, 71, 102);
 .caption {
     background: rgb(128, 0, 64);
     color:white !important;
-    position: absolute;
+    /* position: absolute; */
     font-size: 30px;
     top: 50%;
     opacity: 50%;
@@ -122,7 +118,7 @@ background-color: rgb(102, 71, 102);
     padding:5px; 
     margin: 5px;
     font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;    
-    text-align: center;
+    /* text-align: center; */
 
 }
 
@@ -137,8 +133,4 @@ background-color: rgb(102, 71, 102);
     border-radius: 5px;
     font-family: 'Niramit', sans-serif;
     
-}
-
-.deleteButton{
-
 }

@@ -65,7 +65,7 @@ class Lipstick extends Component {
             <footer>
             <div class="card-footer">
     <p>BeautyGeek</p>
-  </div>
+    </div>
             </footer>
             </div>
            
