@@ -1,12 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
-.ProductBox{
-    background: blue;
-    
+.productBox{
+    background: rgb(235, 232, 233) !important;
+    text-align: center;
+    border: 1px inset;
+    border-color: rgb(71, 3, 43);
+    background-image: url('./BK3.jpg') !important;
 }
 
-.container h2{
-    color: red;
+.productTitle{
+    font-family: 'Abril Fatface', cursive;
 }
-.form{
 
+
+.buyLink{
+    font-size: 15px;
+    color: rgb(148, 1, 89);
+}
+.reviewBox{
+    border-radius: 5px;
+    background-image: url('./BK3.jpg') !important;
+}
+
+.addReview{
+    border-radius: 5px;
+    background-image: url('./BK3.jpg') !important;
+    border: 1px solid;
+    border-color: rgb(80, 31, 39);
+    text-align: left;
+}
+
+.titleInput{
+    height: 40px;
+    width: 700px;
+}
+
+.bodyInput{
+    height: 310px;
+    width: 700px;
 }
