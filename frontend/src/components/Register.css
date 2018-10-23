@@ -13,11 +13,10 @@ border: none;
     max-width: 500px;
     margin: 0 auto;
     font-family: brandon-grotesque!important;
-
 }
 
 
- h2
+ .registrationTitle
 {
     text-align: center;
     letter-spacing: .2px;
